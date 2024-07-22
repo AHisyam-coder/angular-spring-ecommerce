@@ -19,6 +19,7 @@ import { LoginStatusComponent } from './components/login-status/login-status.com
 import { OKTA_CONFIG, OktaAuthModule } from '@okta/okta-angular';
 import OktaAuth from '@okta/okta-auth-js';
 import appConfig from './config/app-config';
+import { MembersPageComponent } from './components/members-page/members-page.component';
 
 const oktaConfig = appConfig.oidc;
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -35,6 +36,7 @@ const oktaAuth = new OktaAuth(oktaConfig);
     CheckoutComponent,
     LoginComponent,
     LoginStatusComponent,
+    MembersPageComponent,
   ],
   imports: [
     BrowserModule,
